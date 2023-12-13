@@ -26,6 +26,6 @@ class MailerController extends AbstractController
 
         $mailer->send($email);
 
-        return new Response();
+        return $this->redirectToRoute('app_register');
     }
 }
