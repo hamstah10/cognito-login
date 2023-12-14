@@ -22,7 +22,7 @@
     --ar-gray-700: #576071;
     --ar-gray-800: #434a57;
     --ar-gray-900: #121519;
-    --ar-primary: #448c74;
+    --ar-primary: #000000;
     --ar-secondary: #edf1f5;
     --ar-success: #3fca90;
     --ar-info: #3f7fca;
@@ -67,7 +67,7 @@
     --ar-code-color: #e3116c;
     --ar-highlight-bg: #fff3cd
 }
-
+:root{--ar-primary:#000000;--ar-primary-rgb:0,0,0;--ar-link-color:#000000;--ar-link-hover-color:#000000;--ar-info:#0871E3;--ar-info-rgb:8,113,227;}.btn-primary{--ar-btn-bg:#000000;--ar-btn-border-color:#000000;--ar-btn-hover-bg:#000000;--ar-btn-hover-border-color:#000000;--ar-btn-active-bg:#000000;--ar-btn-active-border-color:#000000;--ar-btn-disabled-bg:#000000;--ar-btn-disabled-border-color:#000000;}.btn-info{--ar-btn-bg:#0871E3;--ar-btn-border-color:#0871E3;--ar-btn-hover-bg:#0058ca;--ar-btn-hover-border-color:#0058ca;--ar-btn-active-bg:#0058ca;--ar-btn-active-border-color:#0058ca;--ar-btn-disabled-bg:#0871E3;--ar-btn-disabled-border-color:#0871E3;}.btn-outline-primary{--ar-btn-color:#000000;--ar-btn-border-color:#000000;--ar-btn-hover-bg:#000000;--ar-btn-hover-border-color:#000000;--ar-btn-active-bg:#000000;--ar-btn-active-border-color:#000000;--ar-btn-disabled-color:#000000;--ar-btn-disabled-border-color:#000000;}.btn-outline-info{--ar-btn-color:#0871E3;--ar-btn-border-color:#0871E3;--ar-btn-hover-bg:#0871E3;--ar-btn-hover-border-color:#0871E3;--ar-btn-active-bg:#0871E3;--ar-btn-active-border-color:#0871E3;--ar-btn-disabled-color:#0871E3;--ar-btn-disabled-border-color:#0871E3;}.accordion-button:not(.collapsed)::after{--ar-accordion-btn-active-icon:url("data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20fill='%23000000'%3e%3cpath%20d='M.5%206.3c.6-.6%201.6-.6%202.3%200l9.3%209.3%209.3-9.3c.6-.6%201.6-.6%202.3%200%20.6.6.6%201.6%200%202.3L13.3%2018.8c-.6.6-1.6.6-2.3%200L.8%208.5c-.9-.8-.9-1.6-.3-2.2z'/%3e%3c/svg%3e");}
 *,
 *::before,
 *::after {
@@ -4424,7 +4424,7 @@ fieldset:disabled .btn {
 }
 
 .navbar-dark {
-    --ar-navbar-color: rgba(255, 255, 255, 0.9);
+    --ar-navbar-color: rgba(255, 255, 255, 1);
     --ar-navbar-hover-color: var(--ar-primary);
     --ar-navbar-disabled-color: rgba(255, 255, 255, 0.5);
     --ar-navbar-active-color: var(--ar-primary);
