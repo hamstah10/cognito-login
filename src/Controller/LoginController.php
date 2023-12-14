@@ -29,6 +29,17 @@ class LoginController extends AbstractController
         // controller can be blank: it will never be called!
         throw new \Exception('Don\'t forget to activate logout in security.yaml');
     }
+
+    #[Route('/login', name: 'after_logout_redirect')]
+    public function logoutredirect(): Response
+    {
+       
+
+        return $this->render('login/index.html.twig', [
+            
+        ]);
+    }
+
     #[Route('/portal/dashboard', name: 'after_login_redirect')]
     public function number(): Response
     {

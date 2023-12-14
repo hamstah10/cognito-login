@@ -24,6 +24,7 @@ security:
                 default_target_path: after_login_redirect
             logout:
                 path: app_logout
+                target: after_logout_redirect
                 clear_site_data:
                     - cache
                     - storage
