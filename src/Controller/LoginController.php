@@ -11,15 +11,7 @@ use Symfony\Component\Routing\Generator\UrlGeneratorInterface;
 class LoginController extends AbstractController
 {
 
-    #[Route('/', name: 'homepage')]
-    public function homepage(): Response
-    {
-       
-
-        return $this->render('default.html.twig', [
-            
-        ]);
-    }
+   
     #[Route('/login', name: 'app_login')]
     public function index(AuthenticationUtils $authenticationUtils): Response
     {
