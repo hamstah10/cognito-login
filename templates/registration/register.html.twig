@@ -49,9 +49,8 @@
         
         </div>
         <!-- Cover image-->
-        <div class="w-50 bg-size-cover bg-repeat-0 bg-position-center" style="background-image: url(assets/img/account/cover.jpg);"></div>
-      </div>
-    {% for flash_error in app.flashes('verify_email_error') %}
+        <div class="w-50 bg-size-cover bg-repeat-0 bg-position-center" style="background-image: url(assets/img/account/cover.jpg);">
+        {% for flash_error in app.flashes('verify_email_error') %}
         <div class="alert alert-danger" role="alert">{{ flash_error }}</div>
     {% endfor %}
 
@@ -68,4 +67,7 @@
 
         <button type="submit" class="btn">Register</button>
     {{ form_end(registrationForm) }}
+      </div>
+      </div>
+    
 {% endblock %}
