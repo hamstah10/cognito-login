@@ -1,5 +1,13 @@
 {
     "githubPullRequests.ignoredPullRequestBranches": [
         "master"
+    ],
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "driver": "SQLite",
+            "name": "login",
+            "database": "/Users/andresancken/Arbeit/symfony/cognito-login/cognito-login/database/login.sqlite3"
+        }
     ]
 }

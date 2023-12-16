@@ -43,12 +43,12 @@ class LoginController extends AbstractController
     }
 
     #[Route('/portal/dashboard', name: 'after_login_redirect')]
-    public function number(): Response
+    public function userDashboard(): Response
     {
-        $number = random_int(0, 100);
-
+        
+        $this->denyAccessUnlessGranted('ROLE_USER');
         return $this->render('portal/dashboard.html.twig', [
-            'number' => $number,
+            
         ]);
     }
 }
